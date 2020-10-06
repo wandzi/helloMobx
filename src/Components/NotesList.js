@@ -5,7 +5,7 @@ import StoreContext from '../Store/StoreContext'
 
 const NotesList = () => {
     const store = React.useContext(StoreContext)
-  
+
     return <Observer>{() => (
       <ul>
         {store.notes.map(note =>{
